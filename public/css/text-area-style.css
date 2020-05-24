@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Mukta:wght@400;500;600&display=swap');
+
+.config{
+  position: relative;
+  width: 99%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  background-color: #f1f5f1;
+  box-shadow: 0 0 5px 0px #adadad;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.config i{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.config input[type = color]{
+  border: none;
+}
+
+.config input[type = color]:focus{
+  outline: none;
+}
+
+.font-size{
+  width: 35px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.box-align{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.box-align a{
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.box-align a:active{
+  color: #2c7065;
+}
+
+.box-text{
+  margin: 20px;
+  width: 100%;
+  min-height: 35em;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.note-text{
+  width: 99%;
+  border-radius: 5px;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 0 5px 0px #adadad;
+  background-color: #f1f5f1;
+  border: none;
+  padding: 10px;
+}
+
+.note-text:focus{
+  outline: none;
+}

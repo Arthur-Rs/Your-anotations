@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Mukta:wght@400;500;600&display=swap');
+
+/*--------- root -------------*/
+
+:root{
+  font-family: 'Mukta', sans-serif;
+}
+
+:root p{
+  font-family: 'Montserrat', sans-serif;
+}
+:root label{
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root input{
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  margin: 0px;
+}
+
+/*--------- header -------------*/
+
+header{
+  background-color: #eff8f7;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid #1fa38d;
+}
+
+header h1{
+  width: 100%;
+  padding-left: 20px;
+  color: #2c7065;
+}
+
+header ul{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  list-style: none;
+  padding-right: 40px;
+}
+
+header li{
+  margin: 5px;
+  padding: 5px 15px 5px 15px;
+  min-width: 45px;
+  background-color: #1fa38d;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+
+  transition: .3s;
+}
+
+header li:hover{
+  background-color: #4ebba9;
+}
+
+header li:active{
+  background-color: #2c7065;
+}
+
+/*--------- bory -------------*/
+
+.section-main{
+  min-height: 35em;
+  display: flex;
+}
+
+
+/*--------- Footer -------------*/
+
+footer {
+  background-color: #2c7065;
+
+}
+
+footer p{
+  color: #eff8f7;
+  text-align: center;
+  margin: 0px;
+  padding: 25px;
+}
+

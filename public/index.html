@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/anotations-style.css" rel="stylesheet">
+  <link href="css/text-area-style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <title>Anotações</title>
+</head>
+<body>
+  <header>
+      <h1>Your anotations</h1>
+      <ul>
+        <li>Home</li>
+        <li>Sobre</li>
+      </ul>
+  </header>
+  <section class="section-main">
+    <div class="box-note">
+      <h3>Suas Anotações</h3>
+      <ul id="notes">
+            
+        <li class="new-name" id="new-name">
+          <input type="text" id="name" placeholder="Nome"></input>
+          <i class="material-icons" id="add-new-note" onclick="downInput()">add_circle</i>
+        </li>
+
+        <li class="add-note">
+          <a class="material-icons" id="add-note" onclick="upInput()">add_circle</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="box-text">
+      <div class="config">
+          
+        <i for="font-size" class="material-icons">format_size</i>
+        <input type="number" class="font-size" id="font-size" value="16" min="0" max="175">
+        <i for="font-color" class="material-icons">format_color_text</i>
+        <input type="color" id="font-color">
+        <div class="box-align">
+          <a class="material-icons" id="bold"  onclick="bold()">format_bold</a>
+          <a class="material-icons" id="italic"  onclick="italic()">format_italic</a>
+          <a class="material-icons" id="strikethrough"  onclick="strikethrough()">format_strikethrough</a>
+          <a class="material-icons" id="underlined"  onclick="underlined()">format_underlined</a>
+        </div>
+        <div class="box-align">
+          <a class="material-icons" id="align-left"   onclick="alignLeft()">format_align_left</a>
+          <a class="material-icons" id="align-center" onclick="alignCenter()">format_align_center</a>
+          <a class="material-icons" id="align-right"  onclick="alignRight()">format_align_right</a>
+          <a class="material-icons" id="align-justify"onclick="alignJustify()">format_align_justify</a>
+        </div>  
+        
+      </div>
+      <textarea  type="text" class="note-text" id="text-area"></textarea>
+    </div>
+  </section>
+  <footer>
+    <p>Your Anotation - 2020 | GitHub: </p>
+  </footer>
+
+  <script src="js/localStorage.js"></script>
+  <script src="js/get-elements.js"></script>
+  <script src="js/extra-functions.js"></script>
+  <script src="js/text-area.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/animations.js"></script>
+
+</body>
+</html>
