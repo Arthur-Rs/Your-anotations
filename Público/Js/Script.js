@@ -81,6 +81,7 @@ textArea.addEventListener("input", () => {
   anotations.forEach(element => {
     element.id == anotation[0].id ? element.text = anotation[0].text : null
   });
+  updateLocalStorage()
 })
 
 init()
