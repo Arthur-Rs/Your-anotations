@@ -12,17 +12,28 @@
 </head>
 <body>
   <header>
+    <span class="material-icons" id="get-notes" onclick="getNotes()">
+      apps
+      </span>
       <h1>Your anotations</h1>
       <ul>
         <li>Home</li>
         <li>Sobre</li>
       </ul>
+      <span class="material-icons" id="get-menu" >
+        menu
+        </span>
   </header>
   <section class="section-main">
-    <div class="box-note">
+    
+    <div class="box-note" id="box-note">
       <h3>Suas Anotações</h3>
+      <span class="material-icons" id="closeNotes" onclick="closeNotes()">
+        arrow_back_ios
+      </span>
+
       <ul id="notes">
-            
+  
         <li class="new-name" id="new-name">
           <input type="text" id="name" placeholder="Nome"></input>
           <i class="material-icons" id="add-new-note" onclick="downInput()">add_circle</i>
@@ -38,7 +49,7 @@
       <div class="config">
           
         <i for="font-size" class="material-icons">format_size</i>
-        <input type="number" class="font-size" id="font-size" value="16" min="0" max="175">
+        <input type="number" class="font-size" id="font-size" value="16" min="0" max="150">
         <i for="font-color" class="material-icons">format_color_text</i>
         <input type="color" id="font-color">
         <div class="box-align">
@@ -62,12 +73,12 @@
     <p>Your Anotation - 2020 | GitHub: </p>
   </footer>
 
-  <script src="js/localStorage.js"></script>
+  <script src="js/local-storage.js"></script>
   <script src="js/get-elements.js"></script>
   <script src="js/extra-functions.js"></script>
   <script src="js/text-area.js"></script>
   <script src="js/script.js"></script>
   <script src="js/animations.js"></script>
-
+  <script src="js/mobile.js"></script>
 </body>
 </html>

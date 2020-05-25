@@ -21,4 +21,8 @@ let alignCenterButton = document.querySelector("#align-left")
 let alignRightButton = document.querySelector("#align-left")
 let alignJustifyButton = document.querySelector("#align-left")
 
+//------------- mobile-------------
+
+let getNoteButtons = document.querySelector("#get-notes")
+let boxAnotations = document.querySelector("#box-note")
 

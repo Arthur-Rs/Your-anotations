@@ -18,10 +18,11 @@ const addNewNote = () => {
     name: getName.value,
     text: ""
   })
-
+  block()
   init()
   newNote(id)
   activedNote = id
+ 
 }
 
 const deleteNote = id =>{
@@ -29,6 +30,7 @@ const deleteNote = id =>{
     return element.id != id ? true : false
   })
   deleteNoteAnim(id)
+  block()
 }
 
 const selectNote = id => {
@@ -37,6 +39,11 @@ const selectNote = id => {
   })
   activedNote = id
   textArea.value = select[0].text
+  selectedNote()
+  closeNotes  
+  if(mobile){
+    closeNotes()
+  }
 }
 
 
@@ -59,6 +66,7 @@ const init = () => {
   anotations.forEach(element => {
     addNoteToDOM(element)
   });
+  selectedNote()
 }
 
 // <----------------> Events <---------------->
@@ -73,13 +81,19 @@ anotationsUl.addEventListener("click", (event) => {
 
 //auto save
 textArea.addEventListener("input", () => {
+  if(!block()){
+    return false
+  }
+
   const anotation = getNoteById(activedNote)
   anotation[0].text = textArea.value
 
   anotations.forEach(element => {
     element.id == anotation[0].id ? element.text = anotation[0].text : null
   });
+
   init()
 })
 
 init()
+block()

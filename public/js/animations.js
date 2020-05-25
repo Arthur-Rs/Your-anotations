@@ -6,13 +6,13 @@ const upInput = () => {
 
   const inputAnimate = addAnotationIl.animate([
     { 
-      marginTop: "30px",
+      marginTop: "10%",
       opacity: "0%"
     },{
       marginTop: "0px",
       opacity: '100%'
     }
-  ], 250)
+  ], 300)
 }
 
 const downInput = () => {
@@ -24,10 +24,10 @@ const downInput = () => {
       opacity: "100%"
     },{
       position: "inherit",
-      left: "40px",
+      left: "10%",
       opacity: '0%'
     }
-  ], 250)
+  ], 300)
 
   inputAnimate.addEventListener("finish", () => {
     addAnotationIl.style.display = "none"

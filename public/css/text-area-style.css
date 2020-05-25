@@ -4,7 +4,7 @@
   position: relative;
   width: 99%;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: flex;
   background-color: #f1f5f1;
   box-shadow: 0 0 5px 0px #adadad;
@@ -13,13 +13,41 @@
   align-items: center;
 }
 
+@media(max-width: 700px)
+{
+  .config{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+    border: 2px solid #2c7065;
+  }
+}
+
 .config i{
   margin-left: 5px;
   margin-right: 5px;
 }
 
+
+@media(max-width: 700px)
+{
+  .config i{
+    margin-left: 2px;
+    margin-right: 2px;
+    margin: 2px;
+    font-size: 20px;
+  }
+}
+
 .config input[type = color]{
   border: none;
+}
+
+@media(max-width: 700px)
+{
+  .config input [type = color]{
+    width: 18px;
+  }
 }
 
 .config input[type = color]:focus{
@@ -38,11 +66,25 @@
   align-items: center;
   padding-left: 10px;
 }
+@media(max-width: 700px)
+{
+  .box-align {
+    padding-left: 2px;;
+  }
+}
 
 .box-align a{
   cursor: pointer;
 
   transition: .2s;
+}
+
+@media(max-width: 700px)
+{
+  .box-align a{
+    margin: 0px;
+    font-size: 20px;
+  }
 }
 
 .box-align a:active{
@@ -55,7 +97,21 @@
   min-height: 35em;
   display: flex;
   flex-direction: column;
-  
+}
+
+
+@media(max-width: 700px)
+{
+  .box-text{
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    align-items: center;
+    margin: 0px;
+    min-height: 0em;
+
+  }
 }
 
 .note-text{
@@ -64,9 +120,19 @@
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   box-shadow: 0 0 5px 0px #adadad;
-  background-color: #f1f5f1;
   border: none;
   padding: 10px;
+
+  margin-bottom: 5px;
+}
+
+@media(max-width: 700px)
+{
+  .note-text{
+    width: 90%;
+    border: 2px solid #2c7065;
+    min-height: 33em;
+  }
 }
 
 .note-text:focus{

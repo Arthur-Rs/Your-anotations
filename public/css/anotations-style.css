@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Mukta:wght@400;500;600&display=swap');
 
+
 .box-note{
   position: relative;
   display: flex;
@@ -12,6 +13,22 @@
   margin: 20px;
   height: 100%;
   min-height: 35em;
+}
+
+@media(max-width: 700px)
+{
+  .box-note{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 90%;
+    height: 100%;
+    margin: 0px;
+    float: right;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+  }
 }
 
 .box-note h3{
@@ -29,6 +46,26 @@
    padding: 0px;
    margin-top: 8px;
    margin-bottom: 8px;
+}
+
+.box-note span{
+  display: none;
+  position: relative;
+  width: 100%;
+  text-align: end;
+  position: absolute;
+  margin-top: 28px;
+
+  padding-right: 30px;
+  color: #2c7065;
+
+}
+
+@media(max-width: 700px)
+{
+  .box-note span{
+    display: block;
+  }
 }
 
 .note{
@@ -96,6 +133,13 @@
   transition: .2s;
 }
 
+@media(max-width: 700px)
+{
+  .note a{
+    opacity: 100%;
+  }
+}
+
 .note a:hover{
   background-color: #921b1b;
 }
@@ -122,7 +166,12 @@
   opacity: 0%;
   transition: .2s;
 }
-
+@media(max-width: 700px)
+{
+  .add-note a{
+    opacity: 100%;
+  }
+}
 .add-note a:hover{
   color: #2c7065;
 }
